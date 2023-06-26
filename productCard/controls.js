@@ -27,9 +27,10 @@ okBtn.addEventListener("click", function() {
       price: price.value,
       image: img.value
     }
+    console.log(newProduct);
 
-    let response = await fetch('http://127.0.0.1:5500/products.json', {
-      method: 'PUT',
+    let response = await fetch('../products.json', {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
       },

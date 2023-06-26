@@ -41,8 +41,8 @@ localStorage.clear();
 selectedProduct();  
   (async () => {
     try {
-      let product = JSON.parse(sessionStorage.productSelected);
-      let response = await fetch('./products.json', {
+      let product = JSON.parse(localStorage.productSelected);
+      let response = await fetch('products.json', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
