@@ -1,0 +1,8 @@
+.selected {
+  border: solid 1px lightslategray;
+}
+.product-card {
+  display: grid;
+  justify-items: center;
+  padding: auto;
+}

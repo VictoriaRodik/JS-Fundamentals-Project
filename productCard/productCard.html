@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Product card</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h2>Cosmetic products</h2>
+  </header>
+  <main class="product-form">
+    <label for="name">Product name:</label>
+    <input type="text" id="name">
+    <label for="cat">Choose category:</label>
+    <select id="cat">
+      <option value="Face">Face</option>
+      <option value="Hair">Hair</option>
+      <option value="Eyes">Eyes</option>
+      <option value="Body">Body</option>
+    </select>
+    <label for="price">Product price:</label>
+    <input type="text" id="price">
+    <label for="img">Image url:</label>
+    <input type="url" id="img">
+    <button class="product-form__ok">Ok</button>
+    <button class="product-form__cancel">Cancel</button>
+  </main>
+  <script type="module" src="controls.js"></script>
+</body>
+
+</html>
