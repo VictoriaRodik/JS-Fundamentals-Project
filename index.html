@@ -9,21 +9,14 @@
 </head>
 
 <body>
-  <header>
-    <h2>Cosmetic products</h2>
-  </header>
+  <header></header>
   <main class="list">
     <div class="list__controls">
-      <div class="list__controls button">
-        <button class="button add">Add new item</button>
-        <button class="button change" disabled>Change item</button>
-        <button class="button remove" disabled>Remove item</button>
-      </div>
-      <div class="list__controls search">
+      <div class="list__controls-search">
         <input class="search__input" type="search" placeholder="Search">
         <button class="search__btn button">Search</button>
       </div>
-      <div class="list__controls sort">
+      <div class="list__controls-sort">
         <label for="sort">Sort items:</label>
         <select id="sort" name="sort">
           <option value="new" selected>Sort by new in</option>
@@ -32,9 +25,14 @@
           <option value="category">Sort by category</option>
         </select>
       </div>
-      <div class="list__controls">
-        <p class="list__controls sum"></p>
+      <div class="list__controls-sum">
+        <p class="list__controls-sum sum"></p>
       </div>
+    </div>
+    <div class="list__controls-button">
+      <button class="button add">Add new item</button>
+      <button class="button change">Change item</button>
+      <button class="button remove">Remove item</button>
     </div>
     <div class="list__products">
 

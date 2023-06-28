@@ -1,8 +1,103 @@
+:root {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: url("./img/logo.jpg");
+  background-size: cover;
+  background-position: center top;
+  padding: 250px 0px;
+
+}
+
 .selected {
   border: solid 1px lightslategray;
 }
+.list__products img {
+  height: 250px;
+  object-fit: contain;
+}
+
+.list__products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 20px;
+  border: solid 1px lightslategray;
+}
+
 .product-card {
   display: grid;
   justify-items: center;
-  padding: auto;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  margin: 5px;
+}
+
+.list__controls-button {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+
+}
+
+.list__controls-search {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.list__controls-sum {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+}
+.product__form{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 30px;
+  text-align: start;
+ 
+}
+.button {
+  width: 100px;
+  height: 1.5rem;
+  margin: 0 5px;
+}
+.product__form-buttons {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0; 
+}
+.product {
+  padding: 30px;
+  margin: 5%;
+  border: solid 1px lightslategray;
+}
+
+label {
+  margin: 5px 0;
+}
+input {
+  margin: 5px 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+select {
+  margin: 5px 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }

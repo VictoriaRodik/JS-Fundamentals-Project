@@ -1,10 +1,11 @@
-import { localProducts } from './script.js';
 import { list, selectProduct, sum } from './loadProducts.js';
 
 const searchBtn = document.querySelector(".search__btn");
 const searchInp = document.querySelector(".search__input");
 
-searchBtn.addEventListener("click", function() {
+
+searchBtn.addEventListener("click", function () {
+  const localProducts = JSON.parse(localStorage.getItem("products"));
   list.innerHTML = "";
   let sumPrice = 0;
   localProducts.forEach((item) => {

@@ -10,9 +10,9 @@
 
 <body>
   <header>
-    <h2>Cosmetic products</h2>
   </header>
-  <main class="product-form">
+  <main class="product">
+    <div class="product__form">
     <label for="name">Product name:</label>
     <input type="text" id="name">
     <label for="cat">Choose category:</label>
@@ -26,8 +26,11 @@
     <input type="text" id="price">
     <label for="img">Image url:</label>
     <input type="url" id="img">
-    <button class="product-form__ok">Ok</button>
-    <button class="product-form__cancel">Cancel</button>
+  </div>
+  <div class="product__form-buttons">
+    <button class="product-form__ok button">Ok</button>
+    <button class="product-form__cancel button">Cancel</button>
+  </div>
   </main>
   <script type="module" src="controls.js"></script>
 </body>
